@@ -1,0 +1,217 @@
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Shadows Into Light', serif;
+  font-size: 90px;
+  color: #66BFBF;
+  line-height: 2;
+}
+
+
+h2 {
+  color: #66BFBF;
+  padding: 10px;
+}
+
+h3 {
+  color: #11999E;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 2;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #40514E;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  width: 4%;
+  border-bottom: none;
+
+  margin: 100px auto;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.top {
+  background-color: #EAF6F6;
+  position: relative;
+  padding: 100px 0 100px 0;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.middle-container {
+  margin-top: 100px;
+
+}
+
+.bottom-container {
+background-color: #66BFBF;
+padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+}
+
+.top-cloud {
+  display: block;
+  position: absolute;
+  right: 500px;
+  top: 40px;
+}
+
+.descr {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.mypic {
+  width: 400px;
+  height: 400px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+	box-shadow: 0 0 0 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#66BFBF;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #283966;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.btn {
+	position:relative;
+	top:1px;
+}
+
+.copywrite {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+/*
+  -Position can chage the deafault layout
+  - static: the deafault positioning of all html elements
+  - relative: positions elements from specified coordances
+    - coordanances: top: 10px;,bottom: 10px;,left: 10px;, right: 10px;
+    - doesnt affect positioning of other elements, overlaps
+    - moved space still takes up space (like a margin)
+    - make sure to set parant element to relative
+  - absolute:
+    - moves elements relative to its parent
+    - effects spacing of other elements
+  - fixed
+    - elements stay in their current position when the webpage scrolls
+      */
+
+      /*
+      align elements using the text align porperty:
+        text-align: center;
+      or by using margin: auto for block elements with set width:
+        margin: 0 auto;
+
+
+  /*
+    font have two major families:
+      -serif have feet at the edges. times Is the deafault font.
+      -sans-serif: Areal
+      -monospace - each character takes up the same amount of space. used for coding.
+      -cursive: hand written stylesheet.
+      -fantasy: avatar
+      -change family property by;
+        font-family: serif;
+      -or change to a specific font in a faily:
+        font-family: verdana, serif;
+      -web safe fonts can be rendered by most os's
+      -use fallback fonts in case a user does not have a font installed. order from inportance.
+        font-family: 'Geneva', Verdana, Futura;
+      -embedd fonts in the head of html for 100% compatability:
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  */
+
+  /*
+  font properties:
+  you can create a static font size that doesnt scale to user settings by:
+    font-size: 90px;
+  -two static fonts wil only use the most specfic elements font settings
+
+
+    -if user has custom font settings, make the font dynamic by using a percentage:
+      font-size: 562.5%;
+    -if an element has two dynamic sizes (body then h1) the two get added togeher.
+
+    -or you could use em
+      fontsize: 2em;
+    -use rem to use only one font size,less error prone:
+      fontsize: 2rem;
+
+    em means "m" and is:
+      16px === 100% === 1em
+      -so 2em is 32px;
+      */
+
+/*
+use float to wrap text around elements:
+  float: left;
+use clear to makesure there is nothing to specified side:
+  clear: right;
